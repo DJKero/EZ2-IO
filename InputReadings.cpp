@@ -28,7 +28,7 @@ void readPorts();
 const int CONSTANT = 156;
 
 int main() {
-	for (int value = 0 ; value <= 500 ; value++)
+	for (int value = 0 ; value <= 10 ; value++)
 	{
 		readPorts();
 	}
@@ -55,35 +55,35 @@ void readPorts()
 		//Prints the value obtained from the port in binary, or in decimal in the case of turntables. (Binary printing stolen from stackoverflow)
 		switch (portid)
 		{
-			case '101':
+			case 101:
 				{
 					printf("TEST, SVC, E4~1 & P2~1 = "BYTE_TO_BINARY_PATTERN"\r\n", BYTE_TO_BINARY(show));
 					portid = 103;
 				}
 				break;
 
-			case '103':
+			case 103:
 				{
 					printf("P1 TT = %d\r\n", show);
 					portid = 102;
 				}
 				break;
 
-			case '102':
+			case 102:
 				{
 					printf("PDL1, 2xQE, B5~1  = "BYTE_TO_BINARY_PATTERN"\r\n", BYTE_TO_BINARY(show));
 					portid = 104;
 				}
 				break;
 
-			case '104':
+			case 104:
 				{
 					printf("P2 TT = %d\r\n", show);
 					portid = 106;
 				}
 				break;
 
-			case '106':
+			case 106:
 				{
 					printf("PDL2, 2xQE, B10~6 = "BYTE_TO_BINARY_PATTERN"\r\n", BYTE_TO_BINARY(show));
 					portid = 999;
