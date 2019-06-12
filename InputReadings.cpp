@@ -28,7 +28,7 @@ void readPorts();
 const int CONSTANT = 156;
 
 int main() {
-	for (int value = 0 ; value <= 10 ; value++)
+	for (int value = 0 ; value <= 4 ; value++)
 	{
 		readPorts();
 	}
