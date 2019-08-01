@@ -1,6 +1,6 @@
-# EZ2-I/O
+# EZ2 I/O Replacement Project
 
-### Reversing project aspiring to develop an opensource replacement for current I/O and ISA Boards for preservation of the game.
+## Reversing project aspiring to develop an opensource replacement for current I/O and ISA Boards for preservation of the game.
 
 Currently the boards limit hardware upgradability, and how many legit setups can exist in the world depends entirely on these boards.
 
