@@ -2,7 +2,7 @@
 
 ## Reversing project aspiring to develop an opensource replacement for current I/O and ISA Boards for preservation of the game.
 
-Currently the boards limit hardware upgradability, and how many legit setups can exist in the world depends entirely on these boards.
+Currently the boards limit hardware upgradability, and how many legit setups can exist in the world depends entirely on these.
 
 I don't like that and I'm here with the intention to change it, if I can manage to.
 
