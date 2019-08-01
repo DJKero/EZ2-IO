@@ -1,22 +1,29 @@
-Port 103: P1 Turntable
+Port 0x103: P1 Turntable
 	1 Byte:
 		0-255 range
 
-Port 104: P2 Turntable
+Port 0x104: P2 Turntable
 	1 Byte:
 		0-255 range
 
-Port 101: Starts + Effectors
+Port 0x101: Starts + Effectors
 	1 Byte:
 		TEST SERVICE E4 E3 E2 E1 P2 P1
 
-Port 102: B1~B5 + Pdl 1
+Port 0x102: B1~B5 + Pdl 1
 	1 Byte:
 		PEDAL QE QE B5 B4 B3 B2 B1
 
-Port 106: B6~B10 + Pdl 2
+Port 0x106: B6~B10 + Pdl 2
 	1 Byte:
 		PEDAL QE QE B10 B9 B8 B7 B6
 
-Ports 102 and 106:
-	QE bits act as a quadrature encoder, (thanks Ziemas for the input!)
+Ports 0x102 and 0x106:
+	QE bits act as a quadrature encoder:
+		TT byte value - QE bits value
+		           0x8F-00
+		           0x8F-01
+		           0x8F-11
+		           0x8F-10
+		           0x90-00
+	    (thanks Ziemas for the input!)
