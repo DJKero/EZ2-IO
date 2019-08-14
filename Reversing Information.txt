@@ -1,3 +1,9 @@
+Button lights activate when their respective bits are active.
+
+Port 0x100: Neons and Top Lamps
+	1 Byte:
+		? NEONS ? ? ? ? ? ?
+
 Port 0x103: P1 Turntable
 	1 Byte:
 		0-255 range

@@ -1,1 +1,3 @@
 bcc32 -eReadings.exe -nC:\Git\EZ2-IO\bin C:\Git\EZ2-IO\src\Readings.cpp
+
+bcc32 -eTestOutput.exe -nC:\Git\EZ2-IO\bin C:\Git\EZ2-IO\src\TestOutput.cpp
