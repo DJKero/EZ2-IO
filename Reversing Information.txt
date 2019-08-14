@@ -13,31 +13,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-Button lights activate when their respective bits are active.
+INPUTS:
 
-Port 0x100: Neons and Top Lamps
-	1 Byte:
-		? NEONS ? ? ? ? ? ?
-
-Port 0x103: P1 Turntable
-	1 Byte:
-		0-255 range
-
-Port 0x104: P2 Turntable
-	1 Byte:
-		0-255 range
-
-Port 0x101: Starts + Effectors
-	1 Byte:
-		TEST SERVICE E4 E3 E2 E1 P2 P1
-
-Port 0x102: B1~B5 + Pdl 1
-	1 Byte:
-		PEDAL QE QE B5 B4 B3 B2 B1
-
-Port 0x106: B6~B10 + Pdl 2
-	1 Byte:
-		PEDAL QE QE B10 B9 B8 B7 B6
+Port 0x101: TEST SVC E4 E3 E2 E1 P2 P1
+Port 0x102: PEDAL QE QE B5 B4 B3 B2 B1
+Port 0x103: P1 TT Position = 0~255
+Port 0x104: P2 TT Position = 0~255
+Port 0x106: PEDAL QE QE B10 B9 B8 B7 B6
 
 Ports 0x102 and 0x106:
 	QE bits act as a quadrature encoder:
@@ -48,3 +30,10 @@ Ports 0x102 and 0x106:
 		           0x8F-10
 		           0x90-00
 	    (thanks Ziemas for the input!)
+
+OUTPUTS:
+
+Port 0x100: NA NA NA NEONS LAMPX LAMPX LAMPX LAMPX
+Port 0x101: NA NA E4 E3 E2 E1 P2 P1
+Port 0x102: NA NA TT1 B5 B4 B3 B2 B1
+Port 0x103: NA NA TT2 B10 B9 B8 B7 B6
