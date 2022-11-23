@@ -1,9 +1,5 @@
 # EZ2 I/O Replacement Project
 
-## Reversing project aspiring to develop an opensource replacement for current I/O and ISA Boards for preservation of the game.
+Reversing project for EZ2 I/O and ISA Boards.
 
-Currently the boards limit hardware upgradability, and how many legit setups can exist in the world depends entirely on these.
-
-I don't like that and I'm here with the intention to change it, if I can manage to.
-
-If you'd like to help with the project contact me at Discord: DJKero#7003.
+The information provided in this project was used by kasaski in the development of [2EZProject](https://dev.s-ul.net/kasaski/2ezproject).
